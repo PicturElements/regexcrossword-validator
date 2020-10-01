@@ -192,7 +192,7 @@ function constructCheckersHexagonal(puzzle) {
 			clue = row[cI].cell.querySelector(".clue-top input");
 
 		if (!clue || !clue.value)
-			break;
+			continue;
 
 		checkers.push({
 			clue,
@@ -224,7 +224,7 @@ function constructCheckersHexagonal(puzzle) {
 			clue = row[cI].cell.querySelector(".clue-bottom input");
 
 		if (!clue || !clue.value)
-			break;
+			continue;
 
 		checkers.push({
 			clue,
